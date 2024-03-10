@@ -15,7 +15,7 @@ class _WiFiScreenSoftAPState extends State<WiFiScreenSoftAP> {
   Future<void> _showDialog(Map<String, dynamic> wifi, BuildContext context) {
     return showDialog<void>(
       context: context,
-      builder: (BuildContext context) {
+      builder: (BuildContext context2) {
         return WifiDialog(
           wifiName: wifi['ssid']! as String,
           onSubmit: (ssid, password) {
